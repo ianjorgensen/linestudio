@@ -1,0 +1,44 @@
+<% layout('boilerplate') -%>
+<!-- #################################### contact ################################## -->
+<script>
+$(function() {
+	//slideify('.slide li');
+
+	$('#map').hover(function() {
+		$(this).attr('src','/img/mapin4.png');
+	}, function() {
+		$(this).attr('src','/img/mapout.png');
+	});
+});
+</script>
+
+<article id='contact'>
+	<h1>Get in touch. <span class='sub'> Call us, or come by.</span></h1>
+	
+	<section id='office'>
+		<!-- map -->
+		<!--HOW DO WE MAKE google link GO TO A SPECIFIC PAGE?-->
+		<a href='https://maps.google.com/maps?q=Toldbodgade+37b,+1253,+K%C3%B8benhavn+K,+Denmark&hl=en&ie=UTF8&sll=55.682475,12.593304&sspn=0.001001,0.002688&t=m&hnear=Toldbodgade+37,+1253+K%C3%B8benhavn,+K%C3%B8benhavn+K,+Denmark&z=16' target='_blank'><img id='map'src='/img/mapout.png'></a>
+		<ul>
+			<!--these should be links? to what?-->
+			<li class='email'><a href= "mailto:hi@linehq.com" target='_blank'>hi@linehq.com</a></li>
+			<li class='email'><a href= "mailto:inqueries@linehq.com" target='_blank'>inqueries@linehq.com</a></li>
+			<li class='address'><a href="https://maps.google.com/maps?q=Toldbodgade+37b,+1253,+K%C3%B8benhavn+K,+Denmark&hl=en&ie=UTF8&sll=55.682475,12.593304&sspn=0.001001,0.002688&t=m&hnear=Toldbodgade+37,+1253+K%C3%B8benhavn,+K%C3%B8benhavn+K,+Denmark&z=16" target='_blank'>Toldbodgade 37b, 1253, København K, Denmark</a></li>
+			<li class='phone'><a href="tel:+4542834101" target='_blank'>+45 42 83 41 01</a></li>
+		</ul>
+		<div class='clear'></div>
+	</section>
+
+<!--THIS NEEDS TO BE A LINK http://ciid.dk/-->
+	<section id='facilities' class='edge'>
+		<img src='/img/contact_ciid.png'>
+		<!--<ul class='slide'>
+			<li></li>
+			<li><img src='/img/contact_ciid4.png'></li>
+			<li><img src='/img/contact_ciid1.png'></li>
+			<li><img src='/img/contact_ciid3.png'></li>
+		</ul>-->
+		<p>We are located in the heart of Copenhagen. Hosted by The Copenhagen Institute for Interaction Design. We have access to the incredible facilities CIID has; a workshop equipped with lazer cutting, 3D printing, electronics, wood, metal, and fabric, and lighting and photography studio. Just enough. </p>
+		<div class='clear'></div>
+	</section>
+</article>
