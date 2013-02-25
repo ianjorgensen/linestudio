@@ -4,7 +4,7 @@ var express = require('express')
   , fs = require('fs')
   , less = require('less-middleware')
   , public = __dirname + '/web'
-  , port = 9092;
+  , port = process.argv[2] || 9092;
 
 app.engine('ejs', engine);
 app.set('view engine', 'ejs');
