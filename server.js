@@ -19,12 +19,23 @@ app.get('/showcase/:project', function(request, response) {
 	response.render('work/' + request.params.project + '.ejs', {page: {name: 'showcase', title: 'showcase | ' + request.params.project}});
 });
 
-app.get('/:view', function(request, response) {
-	response.render(request.params.view, {page: {name: request.params.view, title: request.params.view}});
-});
+var render = function(view) {
+	return function(request, response) {
+		response.render(view, {page: {name: view, title: view}});	
+	}
+};
+
+app.get('/about', render('about'));
+app.get('/services', render('services'));
+app.get('/showcase', render('showcase'));
+app.get('/contact', render('contact'));
 
 app.use(less({ src: public }));
 app.use(express.static(public));
+
+app.use(function(reqquest, response, next){
+	response.render('404');
+});
 
 app.listen(port);
 console.log('Listening on port ' + port);

@@ -11,9 +11,8 @@ var HEIGHT = 1000;
 var intervalID = 0;
 var cursorX = 150;
 var cursorY = 150;
-var fadeRate = .028;//.028;
+var fadeRate = .024;//.028;
 var showLog = true;
-
 
 function init() {
   	//ctx = $('#canvas')[0].getContext('2d');

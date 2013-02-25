@@ -113,7 +113,10 @@ li img {
 h1 {
   font-size: 1.9em;
   margin: 15px 0;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+}
+.subsection {
+  margin-top: 50px;
 }
 #works h1 {
   margin-bottom: 0px;
@@ -145,13 +148,13 @@ h1 {
   height: 250px;
 }
 #contact #facilities p {
-  margin: 40px 0;
+  margin: 20px 0;
 }
 #contact #office ul {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 #contact #office li {
-  padding: 5px 0;
+  padding: 3px 0;
   color: #353535;
 }
 #contact #office li a {
@@ -196,9 +199,9 @@ h1 {
   display: block;
 }
 #project #piddlefull {
-  width: 84%;
+  width: 88%;
   height: 82%;
-  margin: auto;
+  margin: 30px auto;
 }
 #project img {
   width: 100%;
@@ -264,7 +267,7 @@ h1 {
   font-weight: normal;
 }
 #page-deliverables p {
-  margin: 10px 0;
+  margin: 0;
 }
 #page-deliverables #research img {
   border-color: rgba(0, 172, 179, 0.5);
@@ -306,7 +309,6 @@ h1 {
   margin-right: 5px;
 }
 #about section {
-  padding-top: 20px;
   margin-bottom: 30px;
 }
 #about p {
@@ -365,7 +367,6 @@ h1 {
 
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: 40px;
 }
 #about #love h1 {
   color: #808080;
