@@ -8,6 +8,7 @@
     <![endif]-->
     <script src="/js/lib/jquery.js"></script>
     <script src="/js/all.js"></script>
+    <script src="/js/newsletter.js"></script>
     <script src="/js/many-lines/adapted.particles.js"></script>
 		<script src="/js/many-lines/adapted.library.js"></script>
 
@@ -34,7 +35,18 @@
 				<span class="line">line<span class="description"> a health care design studio</span>
 				<br>
 				<span class="description slogan">We make patient centered health care solutions for ourselves and others.</span>
-			</span>
+				<section id='follow'>
+					<div id='invite' class="form left loop description slogan" style='float'>Keep me in the loop </div>
+					<form class='left form' action="http://linehq.createsend.com/t/j/s/xhyik/" method="post" id="subForm">
+							<input type="text" name="cm-xhyik-xhyik" placeholder='you@mail' id="xhyik-xhyik" size="28" />
+					</form>
+					<div id='plus' class="form left loop description slogan">
+						<a  href='#' id='plusa' onclick='$("#subForm").submit(); return false;' id='submit'>+</a>
+					</div>
+					<div id='thanks' class="left loop description slogan">We'll keep you in the loop!</div>
+					<div id='error' class="left loop description slogan">Oops. The email doesnt look right, try again.</div>
+					<div class='clear'></div>
+				</section>
 			</section>
 			<nav class="clearfix" id="nav">
 		<a href="/" class="active"> Home</a>

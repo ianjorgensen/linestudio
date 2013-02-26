@@ -4,6 +4,9 @@
   margin: auto;
   padding: 0 10px;
 }
+form {
+  display: inline;
+}
 .imgs img {
   width: 60% !important;
   height: 84px;
@@ -385,4 +388,83 @@ h1 {
 }
 #about #love li .out {
   display: none;
+}
+#follow input {
+  border: 6px solid white;
+  -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 11px rgba(0, 0, 0, 0.1), 0 0 0px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 0 10px 0;
+  color: #76bd7f !important;
+  font: 200 18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#follow #invite {
+  padding-right: 5px;
+}
+#follow .loop {
+  padding-top: 42px;
+  color: #76bd7f;
+}
+#follow #plusa {
+  color: #76bd7f !important;
+}
+#follow #plus {
+  padding-top: 35px !important;
+  padding-left: 5px;
+  font-size: 32px !important;
+}
+#follow #thanks,
+#follow #error {
+  display: none;
+}
+#follow .left {
+  float: left;
+}
+#follow #thanks {
+  color: #76bd7f;
+}
+#follow #error {
+  color: #d58065 !important;
+}
+#follow ::-webkit-input-placeholder {
+  color: rgba(118, 189, 127, 0.4);
+}
+#follow :-moz-placeholder {
+  /* Firefox 18- */
+
+  color: rgba(118, 189, 127, 0.4);
+}
+#follow ::-moz-placeholder {
+  /* Firefox 19+ */
+
+  color: rgba(118, 189, 127, 0.4);
+}
+#follow :-ms-input-placeholder {
+  color: rgba(118, 189, 127, 0.4);
+}
+footer #thanks,
+footer #error {
+  display: none;
+}
+footer #thanks {
+  color: #76bd7f !important;
+}
+footer #error {
+  color: #d58065 !important;
+}
+footer .pad {
+  float: left;
+  padding: 0 10px;
+  padding-top: 2px;
+}
+footer .message {
+  padding-right: 5px;
+}
+footer .submit {
+  padding-left: 5px;
+}
+footer form {
+  padding: 0 !important;
 }
