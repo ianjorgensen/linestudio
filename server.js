@@ -4,7 +4,7 @@ var express = require('express')
   , fs = require('fs')
   , less = require('less-middleware')
   , public = __dirname + '/web'
-  , port = process.argv[2] || 9092;
+  , port = process.argv[2] || 8080;
 
 app.engine('ejs', engine);
 app.set('view engine', 'ejs');
@@ -25,6 +25,7 @@ var render = function(view) {
 	}
 };
 
+app.get('/index', render('index'));
 app.get('/about', render('about'));
 app.get('/services', render('services'));
 app.get('/showcase', render('showcase'));
