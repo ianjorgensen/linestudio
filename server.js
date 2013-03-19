@@ -19,7 +19,6 @@ app.get('/conf', function(request, response) {
 	response.render('confs');
 });
 
-
 app.get('/showcase/:project', function(request, response) {
 	response.render('work/' + request.params.project + '.ejs', {page: {name: 'showcase', title: 'showcase | ' + request.params.project}});
 });
