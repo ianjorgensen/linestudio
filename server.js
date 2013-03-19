@@ -15,6 +15,11 @@ app.get('/', function(request, response) {
 	response.render('home', {rows: []});
 });
 
+app.get('/conf', function(request, response) {
+	response.render('confs');
+});
+
+
 app.get('/showcase/:project', function(request, response) {
 	response.render('work/' + request.params.project + '.ejs', {page: {name: 'showcase', title: 'showcase | ' + request.params.project}});
 });
@@ -24,6 +29,10 @@ var render = function(view) {
 		response.render(view, {page: {name: view, title: view}});	
 	}
 };
+
+app.get('/piddle', function(request, response) {
+	response.redirect('/showcase/piddle');
+});
 
 app.get('/index', render('index'));
 app.get('/about', render('about'));

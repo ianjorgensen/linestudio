@@ -122,6 +122,9 @@ h1 {
 .subsection {
   margin-top: 50px;
 }
+#works {
+  padding-bottom: 15px;
+}
 #works h1 {
   margin-bottom: 0px;
 }
@@ -364,7 +367,11 @@ h1 {
 #about #team li {
   float: left;
   margin: 0px 3% 0px 0;
-  width: 48%;
+  width: 100%;
+  margin-left: 0;
+}
+#about #team li img {
+  width: 17% !important;
 }
 #about #love {
   /*border-left: 4px solid pink;	*/
@@ -397,7 +404,7 @@ h1 {
   padding: 12px;
   background: rgba(255, 255, 255, 0.5);
   margin: 0 0 10px 0;
-  color: #76bd7f !important;
+  color: rgba(118, 189, 127, 0.5) !important;
   font: 200 18px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #follow #invite {
@@ -405,10 +412,10 @@ h1 {
 }
 #follow .loop {
   padding-top: 42px;
-  color: #76bd7f;
+  color: rgba(118, 189, 127, 0.5);
 }
 #follow #plusa {
-  color: #76bd7f !important;
+  color: rgba(118, 189, 127, 0.5) !important;
 }
 #follow #plus {
   padding-top: 35px !important;
@@ -423,7 +430,7 @@ h1 {
   float: left;
 }
 #follow #thanks {
-  color: #76bd7f;
+  color: rgba(118, 189, 127, 0.5);
 }
 #follow #error {
   color: #d58065 !important;
@@ -449,7 +456,7 @@ footer #error {
   display: none;
 }
 footer #thanks {
-  color: #76bd7f !important;
+  color: rgba(118, 189, 127, 0.5) !important;
 }
 footer #error {
   color: #d58065 !important;
