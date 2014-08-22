@@ -33,13 +33,18 @@ app.get('/piddle', function(request, response) {
 	response.redirect('/showcase/piddle');
 });
 
+app.get('/one', function(request, response) {
+	response.redirect('/one.html');
+	response.end();
+});
+
 app.get('/index', render('index'));
 app.get('/about', render('about'));
 app.get('/services', render('services'));
 app.get('/showcase', render('showcase'));
 app.get('/contact', render('contact'));
 
-app.use(less({ src: public }));
+less
 app.use(express.static(public));
 
 app.use(function(reqquest, response, next){
